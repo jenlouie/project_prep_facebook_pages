@@ -21,7 +21,7 @@ nav {
     width: 100%;
     background: #3B5998;
     height: 83px;
-    padding: 5px;
+    /*padding: 5px;*/
     top: 0;
 }
 
@@ -31,16 +31,24 @@ nav {
     color: white;
     -webkit-margin-start: 10px;
     float: left;
-}
-
-#login {
-    float: right;
+    -webkit-margin-end: 10px;
 }
 
 fieldset {
     border: 0;
     margin: 0;
     padding: 0;
+}
+
+#main {
+    padding: 5px;
+    clear: both;
+}
+
+/* Sign up page - not logged in */
+
+#login {
+    float: right;
 }
 
 .account-action label {
@@ -61,11 +69,6 @@ fieldset {
     color: #fff;
     cursor: pointer;
     font-weight: bold;
-}
-
-#main {
-    padding: 5px;
-    clear: both;
 }
 
 #main li {
@@ -108,4 +111,47 @@ fieldset {
     cursor: pointer;
     font-weight: bold;
     grid-row: 13 / 19;
+}
+
+/* About page - logged in */
+.header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 10px;
+}
+
+.header .title {
+    grid-column: 1 / span 1;
+}
+
+#logged-in {
+    color: #fff;
+    padding: 5px;
+    padding-top: 26px;
+    padding-right: 20px;
+    font-size: 20px;
+    grid-column: 3 / span 1;
+    font-weight: bold;
+    text-align: right;
+}
+
+.search .btn {
+    background: #F77444;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bolder;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#search {
+    grid-column: 2 / span 1;
+    padding-top: 26px;
+}
+
+#search-box {
+    width: 75%;
 }
