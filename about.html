@@ -12,29 +12,62 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-<nav>
-    <div class="header">
-        <h1 class="title">
-            facelook
-        </h1>
-        <form id="search" action="/search">
-            <fieldset class="search">
-                <input id="search-box" type="text" name="search" placeholder="Search facelook">
-                <input class="btn" type="submit" name="search" value="Search">
-            </fieldset>
-        </form>
-        
-        <div id="logged-in">Alan</div>
+<header id="about-header">
+    <h1 class="title">
+        facelook
+    </h1>
+    <form id="search" action="/search">
+        <fieldset class="search">
+            <input id="search-box" type="text" name="search" placeholder="Search facelook">
+            <input class="btn" type="submit" name="search" value="Search">
+        </fieldset>
+    </form>
+    
+    <div id="logged-in">
+        <img src="/public/mrbean_header.jpg" alt="Small profile photo"> 
+        <label class="logged-in-name">Alan</label>   
     </div>
-</nav>
+</header>
 
 <div id="main">
-    <div id="main-announce">
-       
-    </div>
-    <div id="main-sign-up">
-        
-    </div>
+    <!--<div class="below-header">-->
+        <div id="main-header">
+            <!--<div class="cover-photo">-->
+                <img class="cover-photo" src="/public/Rowan_Atkinson_in_Mr._Beans_Holiday_Wallpaper_5_800.jpg">
+            <!--</div>-->
+            
+            <!--<div class="big-profile-photo">-->
+                <img class="big-profile-photo" src="/public/mrbean_profile.jpg" alt="Big profile photo">
+            <!--</div>-->
+            
+            <h2 class="title">Alan Weirdork</h2>
+           
+            <nav>
+                <!--<ul>-->
+                    <!--<li class="timeline"><a href="/timeline.html">Timeline</a></li>
+                    <li class="about"><a href="/about.html">About</a></li>
+                    <li class="photos"><a href="/photos.html">Photos</a></li>
+                    <li class="friends"><a href="/friends.html">Friends</a></li>
+                    <li class="edit-profile"><a href="/profile-edit.html">Edit Profile</a></li>-->
+                <!--</ul>-->
+                <!--<span class="timeline"><a href="/timeline.html">Timeline</a></span>
+                <span class="about"><a href="/about.html">About</a></span>
+                <span class="photos"><a href="/photos.html">Photos</a></span>
+                <span class="friends"><a href="/friends.html">Friends</a></span>
+                <span class="edit-profile"><a href="/profile-edit.html">Edit Profile</a></span>-->
+
+                <span class="timeline">Timeline</span>
+                <span class="about">About</span>
+                <span class="photos">Photos</span>
+                <span class="friends">Friends</span>
+                <span class="edit-profile">Edit Profile</span>
+            </nav>
+        </div>
+        <div id="main-content">
+            <div id="title-bar"></div>
+            <div id="about-content"></div>
+        </div>
+    <!--</div>-->
 </div>
 </body>
 </html>
